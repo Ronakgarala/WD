@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>animition</title>
+	<style type="text/css">
+		.a{
+			width: 100px;
+			height: 100px;
+			background: black;
+			border-radius: 50%;
+			position: absolute;
+			animation-name: a;
+			animation-duration: 2s;
+			animation-direction: normal;
+			animation-iteration-count: infinite;
+		}
+		
+		@keyframes a{
+			0%{
+				top: 0px;
+				left: 0px;
+				background: hotpink;
+			}
+			25%{
+				top: 0px;
+				left: 200px;
+				background: yellow;
+			}
+			50%{
+				top: 200px;
+				left: 200px;
+				background: blue;
+			}
+			75%{
+				top: 200px;
+				left: 0px;
+				background: skyblue;
+			}
+			100%{
+				top: 0px;
+				left: 0px;
+				background: salmon;
+			}
+
+		}
+			.b{
+			width: 100px;
+			height: 100px;
+			background: black;
+			
+			position: absolute;
+			animation-name: b;
+			animation-duration: 2s;
+			animation-direction: normal;
+			animation-iteration-count: infinite;
+		}
+		
+		@keyframes b{
+			0%{
+				top: 300px;
+				left: 0px;
+				background: hotpink;
+			}
+			25%{
+				top: 300px;
+				left: 200px;
+				background: yellow;
+				border-radius: 12.5%;
+			}
+			50%{
+				top: 500px;
+				left: 200px;
+				background: blue;
+				border-radius: 25%;
+			}
+			75%{
+				top: 500px;
+				left: 0px;
+				background: skyblue;
+				border-radius: 37.5%;
+			}
+			100%{
+				top: 300px;
+				left: 0px;
+				background: salmon;
+				/*border-radius: 50%;*/
+			}
+
+		}
+		
+	</style>
+</head>
+<body>
+	<div class="a"></div>
+	<div class="b"></div>
+
+</body>
+</html>
